@@ -1,4 +1,4 @@
-# Lesion-Aware Potato Disease Classification (SAM3 + EfficientViT)
+# Lesion-Aware Potato Disease Detection (SAM3 + EfficientViT)
 
 This project introduces a **Lesion-Aware Data Preprocessing** stage to the potato disease detection pipeline. By integrating the **Segment Anything Model 3 (SAM3)**, we preprocess raw potato leaf images to remove backgrounds and focus on specific disease symptoms (lesions) before feeding them into the classification model (EfficientNetV2B3+ViT).
 
