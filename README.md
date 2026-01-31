@@ -4,6 +4,23 @@ This project introduces a **Lesion-Aware Data Preprocessing** stage to the potat
 
 This work improves upon the baseline architecture described in **[BASELINE.md](BASELINE.md)**.
 
+## 📁 Dataset
+
+TThis project uses the **Potato Leaf Disease Dataset**, which was collected directly from potato farms in Central Java, Indonesia, under uncontrolled outdoor conditions. The dataset reflects real-world agricultural scenarios and poses greater challenges compared to laboratory-collected datasets.
+
+
+![Dataset samples](static/data/sample.png)
+
+*Representative samples from the Potato Leaf Disease Dataset across seven classes, illustrating complex backgrounds, lighting variation, and diverse lesion appearances.*
+
+
+### Data Splitting Strategy
+
+The dataset is first divided into **training and testing sets** using a **90\% / 10\% split**, following the same protocol for all experiments to ensure fair comparison.  
+The training set is then further split into **training and validation subsets** with a **9:1 ratio**.
+
+Data augmentation is applied **only to the training set** to improve model generalization and robustness under real-world conditions. The augmentation strategy includes common transformations such as geometric variations and appearance perturbations, while preserving the semantic characteristics of disease symptoms.
+
 ## 🏗️ Architecture & Workflow
 
 
