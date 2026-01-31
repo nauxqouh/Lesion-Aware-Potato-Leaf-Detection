@@ -50,7 +50,7 @@ Once the new dataset is generated, update your configuration to point to it.
     python src/train.py
     ```
 
-## 📊 Visual Prompts (Table 4)
+## 📊 Visual Prompts
 The logic for symptom-based segmentation is defined in `src/lesion_aware.py`. Below is a summary of the visual characteristics used as prompts:
 
 | Class | Visual Characteristics / SAM3 Prompts |
@@ -67,14 +67,14 @@ The logic for symptom-based segmentation is defined in `src/lesion_aware.py`. Be
 
 Below is a summary of the model performance comparing our proposed **SAM3 + EfficientViT** pipeline against the baseline.
 
-### Table 4.2: Overall Performance Comparison
+### Table: Overall Performance Comparison
 | Model / Method | Acc (%) | Pre (%) | Rec (%) | F1 (%) | MCC |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **EfficientViT (Baseline)\*** | 85.06 | 82.86 | 85.29 | 83.77 | 0.8200 |
 | **EfficientViT (Re-impl)** | 85.06 | 82.37 | 85.53 | 83.52 | 0.8200 |
 | **Proposed (Lesion-Aware)** | **86.36** | **83.30** | 81.87 | 82.53 | **0.8303** |
 
-### Table 4.3: Performance Improvement by Class (Proposed vs Baseline)
+### Table: Performance Improvement by Class (Proposed vs Baseline)
 | Class | Acc (Δ) | Pre (Δ) | Rec (Δ) | F1 (Δ) | MCC (Δ) |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Phytophthora** | +0.0435 | +0.2324 | +0.0435 | +0.1488 | +0.1564 |
